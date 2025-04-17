@@ -10,7 +10,7 @@ import { ICellProps } from "./GridGenerator/Cell";
 export const MAX_LENGTH = 12;
 // useDebounce.ts
 
-export function useDebounce<T extends (...args: any[]) => void>(
+export function useDebounce<T extends (...args: never[]) => void>(
   callback: T,
   delay = 200
 ) {
