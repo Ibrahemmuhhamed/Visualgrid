@@ -1,6 +1,6 @@
 "use client";
 
-import { JSX, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosRemoveCircle } from "react-icons/io";
 import { IGridCell, useDebounce } from "../functions";
 const ANIMATION_TIME = 300;
@@ -24,7 +24,6 @@ export default function Cell({
   maxColumn,
   maxRow,
 
-  type,
   onRemove,
   onClassNameChange,
   assignedClassName,
@@ -32,7 +31,7 @@ export default function Cell({
 
   ...props
 }: ICellProps) {
-  const [opacity, setOpacity] = useState(100);
+  const opacity = 100;
   const [localClassName, setLocalClassName] = useState(assignedClassName || "");
   const [isExiting, setIsExiting] = useState(true);
   // set the class name

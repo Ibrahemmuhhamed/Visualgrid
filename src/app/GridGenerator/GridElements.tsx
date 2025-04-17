@@ -1,12 +1,4 @@
-import {
-  Dispatch,
-  JSX,
-  ReactNode,
-  SetStateAction,
-  memo,
-  use,
-  useEffect,
-} from "react";
+import { JSX, memo } from "react";
 import { Igrid } from "../page";
 import { MAX_LENGTH } from "../functions";
 interface IProsp {
@@ -15,18 +7,6 @@ interface IProsp {
 }
 const GridElements = memo(({ grid, gridElements }: IProsp) => {
   {
-    // filter the cell that starting in column or row that is not in the grid
-
-    // useEffect(() => {
-    //   setGridElementsArr((prev) => {
-    //     const newArray = prev.filter(
-    //       (ele) =>
-    //         ele.props["gridPostion"].column.start <= grid.columns.length &&
-    //         ele.props["gridPostion"].row.start <= grid.rows.length
-    //     );
-    //     return newArray;
-    //   });
-    // }, [grid, setGridElementsArr]);
     return (
       <div
         className="grid bg-transparent absolute inset-0 z-10 opacity-100 pointer-events-none  transition select-none "

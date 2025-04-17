@@ -1,4 +1,4 @@
-import { JSX, useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { Igrid } from "../page";
 import { MAX_LENGTH } from "../functions";
 

@@ -48,7 +48,7 @@ export default function Controllers({
         }
 
         // For other keys (assuming they’re not arrays) compare directly.
-        if (prev[key] === e.target.value) return prev;
+        if (prev[key] === +e.target.value) return prev;
         return { ...prev, [key]: e.target.value };
       });
     },

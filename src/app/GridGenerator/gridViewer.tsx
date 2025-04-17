@@ -36,14 +36,12 @@ export default function GridViewer({
   grid,
   GridElementsArr,
   setGridElementsArr,
-  classNames,
-  setClassNames,
 }: IProps) {
   const currRef = useRef<Igrid>({
-    "Column Gap": "0",
+    "Column Gap": 0,
     columns: [],
     rows: [],
-    "Row Gap": "0",
+    "Row Gap": 0,
     id: 0,
   });
   const isDrag = useRef(false);
